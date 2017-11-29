@@ -47,7 +47,7 @@ if __name__ == "__main__":
     n = X.shape[0]
     rnd_birds = np.vstack([np.hstack([X[np.random.choice(n)] for i in range(10)])
                            for j in range(10)])
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(6, 6))
     plt.imshow(rnd_birds / 255)
     plt.gca().get_xaxis().set_visible(False)
     plt.gca().get_yaxis().set_visible(False)
